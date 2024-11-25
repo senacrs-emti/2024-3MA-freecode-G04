@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 include_once '../includes/process.php';
-include_once '../includes/log.php';
+include_once '../includes/logger.php';
 
 header('Content-Type: application/json');
 
