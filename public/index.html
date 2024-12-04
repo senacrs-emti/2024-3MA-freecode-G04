@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocímetro e Marcador de RPM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="marcador">
+        <h3>RPM</h3>
+        <div id="rpm"></div>
+    </div>    
+    <div id="main">
+        <h1>FetznerAutoSync</h1>
+        <div id="dados">
+            <div id="piscas-container">
+                <div id="pisca-esquerda" class="pisca"><i class="fas fa-arrow-left"></i></div>
+
+                <table id="luzes-tabela">
+                    <tbody>
+                        <tr id="estado-lanternas">
+                            <td>Lanternas</td>
+                        </tr>
+                        <tr id="estado-farol-baixo">
+                            <td>Farol Baixo</td>
+                        </tr>
+                        <tr id="estado-luz-alta">
+                            <td>Luz Alta</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="pisca-direita" class="pisca"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div id="portas-container">
+                <h4>Portas abertas:</h4>
+                <div id="porta-motorista" >Motorista</div>
+                <div id="porta-passageiro">Passageiro</div>
+                <div id="porta-traseira"  >Traseira</div>
+            </div>
+            <div id="marcha-container">
+                <h4>Marcha Engatada:</h4>
+                <div id="luz-marcha" class="luz-indicadora"></div>
+            </div>  
+            <div id="map" style="width: 90%; height: 100%;"></div>
+        </div>
+    </div>
+    <div class="marcador">
+        <h3>Velocímetro</h3>
+        <div id="velocimetro"></div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./static/script.js"></script>
+
+</body>
+</html>

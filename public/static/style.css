@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marcador {
+    height: 75%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcador div {
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 50%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#dados {
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#marcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#piscas-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6rem;
+}
+
+.luz-indicadora {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 90, 90);
+    box-shadow: 0 0 5px rgb(255, 90, 90);
+}
+.luz-indicadora.ativa {
+    background-color: lightgreen;
+    box-shadow: 0 0 10px lightgreen;
+}
+
+.pisca {
+    font-size: 50px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #696969;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pisca.ativo {
+    background-color: yellow;
+}
+
+#luzes-tabela {
+    width: 40%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 1px solid #000000;  
+}
+
+#luzes-tabela th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#luzes-tabela th {
+    background-color: #f4f4f4;
+    font-size: 18px;
+    text-align: center;
+}
+
+#luzes-tabela td {
+    font-size: 16px;
+    text-align: center;
+}
+
+.luz-tabela-ativo {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+#portas-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portas-container * {
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+}
+
+.porta-aberta {
+    background-color: lightgreen;
+    font-weight: bold;
+}
